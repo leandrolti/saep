@@ -3,9 +3,9 @@
 if (!defined('DB_CONFIG')) {
     define('DB_CONFIG', [
         'host' => 'localhost',
-        'dbname' => 'saep2025',
-        'user' => 'root',
-        'pass' => 'bdjmf'
+        'dbname' => 'nome_do_banco',
+        'user' => 'usuario_mysql',
+        'pass' => 'senha_mysql'
     ]);
 }
 
