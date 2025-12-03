@@ -1,0 +1,45 @@
+.tabelaresp{
+    width: 100%; /* aqui pode ser auto ou 100%*/
+    overflow-x: auto;
+}
+.tab_dados {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.tab_dados a {
+    color: #484848;
+    text-decoration: none;
+}
+.tab_dados th {
+    background: #0091FF;
+    color:#FFFFFF;
+    font-style: italic;
+} 
+.tab_dados tr {
+    height: 50px;
+    border-bottom: 1px solid #D5D5D5;
+}
+.tab_dados tr:nth-child(odd) {
+    background: #F7F7F7;
+} 
+.tab_dados tr:nth-child(even) {
+    background: #FFFFFF;
+}
+.tab_dados tr:hover {
+    background: #F1F1F1;
+}
+tfoot tr td{
+    border:0;
+    height: 40px;
+}
+.tfoot{
+    width: 100%;
+}
+.custom-radio input{
+    display: none;
+}
+h1.maius,h2.maius,h3.maius,h4.maius{
+    text-transform: uppercase !important;
+    size: 15px !important;
+}
