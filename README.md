@@ -1,172 +1,247 @@
-# [Soft UI Dashboard](http://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/soft-ui-dashboard&text=Check%20Soft%20UI%20Dashboard%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#softdesign%20#html%20https://www.creative-tim.com/product/soft-ui-dashboard) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/FhCJCaHdQa)
+# SAEP - Sistema de Seleção de Alunos da Escola Profissional
 
-![version](https://img.shields.io/badge/version-1.0.7-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/soft-ui-dashboard.svg)](https://github.com/creativetimofficial/soft-ui-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/soft-ui-dashboard.svg)](https://github.com/creativetimofficial/soft-ui-dashboard/issues?q=is%3Aissue+is%3Aclosed)
+<div align="center">
+  
+  ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+  ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+  ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+  ![Soft UI Dashboard](https://img.shields.io/badge/Soft_UI_Dashboard-1E88E5?style=for-the-badge&logo=material-design&logoColor=white)
+  ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/450/original/opt_sd_free_thumbnail.jpg?1617715816)
+</div>
 
-Most complex and innovative Dashboard Made by [Creative Tim](https://creative-tim.com/). Check our latest Free Bootstrap 5 Dashboard.
+## 📋 Sobre o Projeto
 
-Designed for those who like bold elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, Soft UI Dashboard is ready to help you create stunning websites and webapps.
+O **SAEP** é uma plataforma digital desenvolvida em **PHP com PDO** para gerenciar de forma eficiente, transparente e automatizada o processo seletivo de alunos para uma Escola Profissional. O sistema substitui processos manuais e burocráticos, garantindo precisão nos cálculos, conformidade com as políticas de cotas estabelecidas em editais e agilidade na divulgação de resultados.
 
-We created many examples for pages like Sign In, Profile and so on. Just choose between a Basic Design, an illustration or a cover and you are good to go!
+### 🎨 Interface
+Para garantir uma experiência de usuário moderna, intuitiva e visualmente agradável, o sistema foi desenvolvido utilizando a **template Soft UI Dashboard** como base para a construção de seu layout. Esta escolha proporciona uma interface limpa, com componentes visuais bem definidos e uma navegação fluida entre os diferentes módulos do sistema.
 
-**Fully Coded Elements**
+### 🎯 Objetivo Principal
+Classificar os candidatos com base no seu desempenho escolar histórico (notas do 6º ao 9º ano), respeitando rigorosamente os critérios de distribuição por cotas definidos pela secretaria de educação do Ceará.
 
-Soft UI Dashboard is built with over 70 frontend individual elements, like buttons, inputs, navbars, navtabs, cards or alerts, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS files and classes.
+## 👥 Arquitetura de Perfis de Usuários
 
-You will save a lot of time going from prototyping to full-functional code, because all elements are implemented.
-This Free Bootstrap 5 Dashboard is coming with prebuilt design blocks, so the development process is seamless,
-switching from our pages to the real website is very easy to be done.
+### 🔐 **A) Perfil Administrador**
+*Perfil com máximo privilégio no sistema, responsável pela configuração geral do processo seletivo.*
 
-View [all components here](https://www.creative-tim.com/learning-lab/bootstrap/alerts/soft-ui-dashboard?ref=readme-sud).
+**Funcionalidades Principais:**
+- ✅ **Gestão de Cursos**: Cadastrar, editar ou inativar cursos profissionais
+- ✅ **Abertura de Processos Seletivos**: Criar e configurar novas turmas
+- ✅ **Gestão de Usuários**: Cadastrar novos operadores (Admin ou Inscrição)
+- ✅ **Gestão de Editais**: Definir quantitativo de vagas por modalidade:
+  - Escola Pública (Ampla Concorrência)
+  - Escola Pública (Cota de Proximidade)
+  - Escola Particular (Ampla Concorrência)
+  - Escola Particular (Cota de Proximidade)
+  - Alunos com Deficiência ou Neurodivergentes (PCD)
+- ✅ **Supervisão Geral**: Dashboard completo e relatórios visuais
 
-**Documentation built by Developers**
+### 📝 **B) Perfil Usuário de Inscrição**
+*Perfil operacional, focado na inserção e verificação dos dados dos candidatos.*
 
-Each element is well presented in a very complex documentation.
-You can read more about the <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-dashboard" target="_blank">documentation here</a>.
+**Funcionalidades Principais:**
+- ✅ **Cadastro de Alunos/Candidatos**: Inserção completa de dados
+- ✅ **Dados Obrigatórios para Inscrição**:
+  1. Nome completo do aluno
+  2. Curso pretendido
+  3. Ano de ingresso almejado
+  4. **Notas Escolares Históricas** (6º ao 9º ano)
+  5. Informações para enquadramento nas cotas
 
-**Example Pages**
+## ⚙️ Algoritmo de Seleção
 
-If you want to get inspiration or just show something directly to your clients,
-you can jump start your development with our pre-built example pages. You will be able
-to quickly set up the basic structure for your web project.
-View <a href="https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html" target="_blank">example pages here</a>.
-
-**HELPFUL LINKS**
-
-- View <a href="https://github.com/creativetimofficial/soft-ui-dashboard" target="_blank">Github Repository</a>
-
-- Check <a href="https://www.creative-tim.com/faq" target="_blank">FAQ Page</a>
-
-#### Special thanks
-During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
-- [Bootstrap 5](https://www.getbootstrap.com)- Open source front end framework
-- [Popper.js](https://popper.js.org/) - Kickass library used to manage poppers
-
-Let us know your thoughts below. And good luck with development!
-
-## Table of Contents
-
-- [Soft UI Dashboard  ](#soft-ui-dashboard--)
-      - [Special thanks](#special-thanks)
-  - [Table of Contents](#table-of-contents)
-  - [Versions](#versions)
-  - [Demo](#demo)
-  - [Quick start](#quick-start)
-  - [Terminal Commands](#terminal-commands)
-  - [Documentation](#documentation)
-    - [What's included](#whats-included)
-  - [Browser Support](#browser-support)
-  - [Resources](#resources)
-  - [Reporting Issues](#reporting-issues)
-  - [Technical Support or Questions](#technical-support-or-questions)
-  - [Licensing](#licensing)
-  - [Useful Links](#useful-links)
-        - [Social Media](#social-media)
-
-## Versions
-
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/soft-ui-dashboard?ref=readme-sud)
-
-| HTML |
-| --- |
-| [![Soft UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/450/thumb/opt_sd_free_thumbnail.jpg?1617715816)](http://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
-
-## Demo
-
-- [Profile page](http://demos.creative-tim.com/soft-ui-dashboard/pages/profile.html?ref=readme-sud)
-- [Sign in page](http://demos.creative-tim.com/soft-ui-dashboard/pages/sign-in.html?ref=readme-sud)
-- [Sign up page](https://demos.creative-tim.com/soft-ui-dashboard/pages/sign-up.html?ref=readme-sud)
-
-[View More](https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud).
-
-## Quick start
-
-Quick start options:
-
-- Download from [Creative Tim](https://www.creative-tim.com/product/soft-ui-dashboard?ref=readme-sud).
-
-## Terminal Commands
-
-1. Download and Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/download/).
-2. Navigate to the root / directory and run npm install to install our local dependencies.
-
-## Documentation
-The documentation for the Soft UI Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-dashboard?ref=readme-sud).
-
-### What's included
-
-Within the download you'll find the following directories and files:
-
-```
-soft-ui-dashboard
-    ├── assets
-    │   ├── css
-    │   ├── fonts
-    │   ├── img
-    │   ├── js
-    │   │   ├── core
-    │   │   ├── plugins
-    │   │   └── soft-ui-dashboard.js
-    │   │   └── soft-ui-dashboard.js.map
-    │   │   └── soft-ui-dashboard.min.js
-    │   └── scss
-    │       ├── soft-ui-dashboard
-    │       └── soft-ui-dashboard.scss
-    ├── docs
-    │   ├── documentation.html
-    ├── pages
-    ├── CHANGELOG.md
-    ├── gulpfile.js
-    ├── package.json
+### 🔢 **Processo Automatizado:**
+```math
+Média Geral = (soma da média de cada ano - 6º, 7º, 8º e 9º) / (Número total de médias)
 ```
 
-## Browser Support
+### 📊 **Etapas do Processo:**
+1. **Cálculo da Média Geral** para cada aluno
+2. **Classificação por Curso** (ordem decrescente)
+3. **Aplicação das Cotas** do edital
+4. **Geração dos Resultados Finais**:
+   - 🟢 **Classificados (Aprovados)**
+   - 🟡 **Classificáveis (Lista de Espera)**
 
-At present, we officially aim to support the last two versions of the following browsers:
+## 📈 Módulo de Relatórios
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+### 📋 **Funcionalidades:**
+- 🔍 **Página de Relatórios** com filtros avançados
+- 📊 **Busca por**: nome, curso ou status
+- 🖨️ **Exportação para PDF** dos resultados
+- 📑 **Documentos Oficiais** gerados automaticamente
 
-## Resources
-- [Live Preview](https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
-- [Download Page](https://www.creative-tim.com/product/soft-ui-dashboard?ref=readme-sud)
-- Documentation is [here](https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-dashboard?ref=readme-sud)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-sud)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-sud)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/soft-ui-dashboard/issues)
+## 🚀 Instalação e Configuração
 
-## Reporting Issues
-We use GitHub Issues as the official bug tracker for the Soft UI Dashboard. Here are some advices for our users that want to report an issue:
+### Pré-requisitos:
+- ✅ Servidor Web (Apache, Nginx, etc.)
+- ✅ PHP 7.4 ou superior
+- ✅ MySQL 5.7 ou superior
+- ✅ Extensão PHP para MySQL habilitada
 
-1. Make sure that you are using the latest version of the Soft UI Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/soft-ui-dashboard?ref=readme-sud).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+### 📥 Passo a passo de Instalação:
 
-## Technical Support or Questions
+```bash
+# 1. Clone o repositório
+git clone https://github.com/leandrolti/saep.git
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-sud) instead of opening an issue.
+# 2. Acesse o diretório do projeto
+cd saep
 
-## Licensing
+# 3. Configure o banco de dados MySQL
+# - Crie um banco de dados no seu MySQL
+# - Importe o arquivo de banco: mysql/saep2025.sql
+# Exemplo via linha de comando:
+mysql -u seu_usuario -p nome_do_banco < mysql/saep2025.sql
 
-- Copyright 2022 [Creative Tim](https://www.creative-tim.com?ref=readme-sud)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-sud)
+# 4. Configure a conexão com o banco de dados
+# Edite o arquivo config/conexao.php:
+'host' => 'localhost',
+'dbname' => 'nome_do_banco_criado',
+'user' => 'seu_usuario_mysql',
+'pass' => 'sua_senha_mysql'
 
-## Useful Links
+# 5. Copie os arquivos para o diretório do servidor web
+# Para Apache (Linux):
+sudo cp -r saep /var/www/html/
 
-- [More products](https://www.creative-tim.com/templates?ref=readme-sud) from Creative Tim
+# 6. Ajuste as permissões (se necessário)
+sudo chmod -R 755 /var/www/html/saep/
+sudo chown -R www-data:www-data /var/www/html/saep/  # Linux/Apache
 
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+# 7. Acesse o sistema no navegador
+# http://localhost/saep/
+```
 
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-sud) from Creative Tim
+### ⚙️ **Configuração Detalhada:**
 
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-sud) (earn money)
+#### 1. **Configuração do Banco de Dados:**
+```sql
+-- Via phpMyAdmin ou linha de comando:
+CREATE DATABASE saep_sistema;
+USE saep_sistema;
 
-##### Social Media
+-- Importar o arquivo SQL:
+SOURCE caminho/para/saep/mysql/saep2025.sql
+```
 
-Twitter: <https://twitter.com/CreativeTim>
+#### 2. **Configuração do Arquivo `config/conexao.php`:**
+```php
+<?php
+return [
+    'host' => 'localhost',      // Endereço do servidor MySQL
+    'dbname' => 'saep_sistema', // Nome do banco de dados criado
+    'user' => 'root',           // Usuário do MySQL
+    'pass' => ''                // Senha do MySQL
+];
+```
 
-Facebook: <https://www.facebook.com/CreativeTim>
+#### 3. **Configuração do Servidor Web:**
+- **Apache**: Certifique-se de que o módulo `mod_rewrite` está habilitado
+- **Permissões**: Diretórios de upload e cache devem ter permissão de escrita
+- **PHP**: Extensões necessárias: `pdo_mysql`, `mbstring`, `gd`
 
-Dribbble: <https://dribbble.com/creativetim>
+### 🔧 **Solução de Problemas Comuns:**
 
-Instagram: <https://instagram.com/creativetimofficial>
+1. **Erro de conexão com o banco de dados:**
+   - Verifique as credenciais em `config/conexao.php`
+   - Confirme se o MySQL está em execução
+   - Teste a conexão manualmente com as credenciais
+
+2. **Página em branco ou erros 500:**
+   - Verifique logs de erro do PHP e Apache
+   - Confirme permissões de arquivo
+   - Habilite `display_errors` no PHP para depuração
+
+3. **Problemas com importação do banco de dados:**
+   - Verifique o tamanho do arquivo SQL
+   - Confirme a versão do MySQL
+   - Execute importação via linha de comando se possível
+
+## 📊 Dados de Acesso Inicial
+
+Após a instalação, você pode acessar o sistema com as seguintes credenciais:
+
+- **Usuário Administrador:**
+  - Login: `admin@gmail.com`
+  - Senha: `admin`
+
+- **Usuário de Inscrição:**
+  - Login: `ins@gmail.com`
+  - Senha: `ins`
+
+**⚠️ Importante:** Altere estas senhas após o primeiro acesso!
+
+## 🏛️ Contexto Institucional
+O SAEP foi desenvolvido para atender às necessidades específicas do **Estado do Ceará**, garantindo que o processo seletivo para escolas profissionais seja **justo, eficiente e baseado em mérito acadêmico**, dentro das políticas de inclusão social estabelecidas pela secretaria de educação.
+
+## 📄 Estrutura de Diretórios básica
+
+```
+saep/
+├── .github/                 # Configurações do GitHub
+├── assets/                  # Recursos estáticos (CSS, JS, imagens)
+│   ├── css/
+│   ├── js/
+│   └── img/
+├── config/                  # Configurações do sistema
+│   └── conexao.php         # Configuração do banco de dados
+├── include/                 # Classes e funções PHP
+├── mySql/                   # Scripts do banco de dados
+│   └── saep2025.sql        # Estrutura e dados iniciais
+├── pages/                   # Páginas do sistema
+├── vendor/                  # Dependências do Composer
+├── LICENSE                  # Licença MIT
+├── README.md               # Este arquivo
+├── composer.json           # Dependências do projeto
+├── composer.lock          # Versões travadas das dependências
+└── index.php              # Ponto de entrada do sistema(login)
+```
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **Licença MIT** - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+```
+MIT License
+
+Copyright (c) 2025 SAEP - Sistema de Seleção de Alunos da Escola Profissional
+
+Permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia
+deste software e dos arquivos de documentação associados (o "Software"), para lidar
+no Software sem restrição, incluindo, sem limitação, os direitos de usar, copiar,
+modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender cópias do Software,
+...
+```
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para:
+
+1. Reportar bugs [abrindo uma issue](https://github.com/leandrolti/saep/issues)
+2. Sugerir novas funcionalidades
+3. Enviar pull requests com melhorias
+
+## 📞 Suporte
+
+Para suporte com instalação ou problemas técnicos:
+
+1. **Issues do GitHub**: [Abrir Issue](https://github.com/leandrolti/saep/issues)
+2. **Verifique os logs** do servidor para erros específicos
+3. **Confira a seção** de Solução de Problemas acima
+
+---
+
+<div align="center">
+  
+  **🎓 Desenvolvido por alunos e atualizado e mantido por Leandro Costa Professor e Coordenador da EEEP José Maria Falcão**
+  
+  [![Acessar Sistema](https://img.shields.io/badge/🌟_Acessar_SAEP-1E88E5?style=for-the-badge&logo=google-chrome&logoColor=white)](#)
+  [![GitHub Repo](https://img.shields.io/badge/📂_Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/leandrolti/saep)
+
+</div>
+
+<p align="center">
+  <i>Se este projeto ajudou você, considere dar uma ⭐ no repositório!</i>
+</p>
